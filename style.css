@@ -1,0 +1,101 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 40px;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+header {
+  text-align: center;
+  border-bottom: 2px solid #333;
+  padding-bottom: 10px;
+}
+
+h2 {
+  margin-top: 30px;
+  color: #444;
+}
+
+.timeline {
+  border-left: 3px solid #333;
+  padding-left: 20px;
+}
+
+.entry {
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.entry::before {
+  content: "";
+  position: absolute;
+  left: -11px;
+  top: 5px;
+  width: 15px;
+  height: 15px;
+  background-color: #333;
+  border-radius: 50%;
+}
+
+.year {
+  font-weight: bold;
+  color: #555;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+}
+
+.skill {
+  background-color: #f0f0f0;
+  padding: 15px;
+  text-align: center;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: transform 0.2s ease;
+}
+
+.skill:hover {
+  background-color: #333;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+.clients-list {
+  list-style: none;
+  padding: 0;
+}
+
+.clients-list li {
+  background-color: #f0f0f0;
+  margin: 8px 0;
+  padding: 12px;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+}
+
+.clients-list li:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+footer {
+  margin-top: 50px;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+}
+
+.footer-links a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer-links a:hover {
+  color: #ffd700;
+}
